@@ -9,7 +9,7 @@ $pdo = new PDO("mysql:host=localhost;dbname=image", "root", "", array(PDO::ATTR_
 
 class connexiondb {
     private $host = '127.0.0.1';
-    private $name = 'image';
+    private $name = 'produits';
     private $user = 'root';
     private $pass = '';
     private $connexion;
