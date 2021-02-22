@@ -9,7 +9,7 @@ require_once('../inc/connectbdd.inc.php');
 
 //Requete php pour lier base ded donner et poster au travers de notre base de données image.sql
 
-if(isset($_SESSION['id_image'])) {//en fonction de l'id_image
+if(isset($_SESSION['id_image'/*ou 'submit'*/])) {//en fonction de l'id_image
     $bdd = new PDO("mysql:host=127.0.0.1;dbname=image;charset =utf8", "root", "");
 
     if(isset($_POST['//nom du formulaire'])) {
