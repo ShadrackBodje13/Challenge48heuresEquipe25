@@ -29,16 +29,16 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `image` (
   `id_image` int(5) NOT NULL,
-  `nom_image` varchar(300) NOT NULL,
-  `type_image` varchar(300) NOT NULL,
-  `photo_avec_produit` varchar(300) NOT NULL,
-  `photo_avec_humain` varchar(300) NOT NULL,
-  `photo_instiutionnelle` varchar(300) NOT NULL,
-  `format` varchar(300) NOT NULL,
-  `credit_photo` varchar(300) NOT NULL,
-  `droit_utilisation_limitee` varchar(300) NOT NULL,
-  `copyright` varchar(300) NOT NULL,
-  `date_fin_droit` date NOT NULL,
+  `nom_image` varchar(300) DEFAULT NULL,
+  `type_image` varchar(300) DEFAULT NULL,
+  `photo_avec_produit` varchar(300) DEFAULT NULL,
+  `photo_avec_humain` varchar(300) DEFAULT NULL,
+  `photo_instiutionnelle` varchar(300) DEFAULT NULL,
+  `format` varchar(300) DEFAULT NULL,
+  `credit_photo` varchar(300) DEFAULT NULL,
+  `droit_utilisation_limitee` varchar(300) DEFAULT NULL,
+  `copyright` varchar(300) DEFAULT NULL,
+  `date_fin_droit` date DEFAULT NULL,
   `tags` varchar(300) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
