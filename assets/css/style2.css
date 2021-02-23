@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: 3px solid red;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cornflowerblue;
+}
+
+.navbar a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+.control:checked~.conditional {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.control:not(:checked)~.conditional {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

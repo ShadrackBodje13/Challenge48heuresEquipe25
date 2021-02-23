@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-/*footer*/
+/* footer
 
 .footer-clean {
     padding:50px 0;
@@ -92,4 +84,116 @@
     margin-bottom:0;
     font-size:13px;
     opacity:0.6;
-  }
+  } */
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: 3px solid red;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cornflowerblue;
+}
+
+.navbar a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+.contact {
+    margin-right: 180px;
+}
+
+.icone {
+    height: 55px;
+    margin-right: 500px;
+}
+
+.suite {
+    display: flex;
+    justify-content: center;
+    color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card {
+    border: 3px solid cyan;
+    width: 200px;
+    height: 170px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-bottom: solid 1px cyan;
+}
+
+.icon {
+    width: 60px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    border-top: solid 3px cyan;
+}
+
+.categories {
+    font-size: 10px;
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.name {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.price {
+    margin: 0 auto;
+    margin-top: 2px;
+    font-weight: 200;
+    color: red;
+}
+
+.photo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produits {
+    margin-left: 200px;
+    margin-right: 200px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+}
+
+.recher {
+    margin-left: 550px;
+    margin-top: 10px;
+}
