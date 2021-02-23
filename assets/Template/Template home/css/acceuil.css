@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    background-color: rgb(227, 243, 248)!important;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    border-bottom: 3px solid purple;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: skyblue!important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.nav-link:hover {
+    font-size: 20px;
+    border: solid 1px darkorchid;
+    border-radius: 10px;
+    background-color: darkblue;
+}
+
+.navbar-brand:hover {
+    font-size: 20px;
+    border: solid 1px darkorchid;
+    border-radius: 10px;
+    background-color: darkblue;
+}
+
+.row1 {
+    background-image: url("photos ambiance/AdobeStock_196892848.jpeg");
+    display: flex;
+    background-size: cover;
+}
+
+.row2 {
+    background-image: url("photos ambiance/_AJG8406.jpg");
+    display: flex;
+    background-size: cover;
+}
+
+.row3 {
+    background-image: url("photos ambiance/Filet saumon TRIM E.jpg");
+    display: flex;
+    background-size: cover;
+}
+
+.row4 {
+    background-image: url("photos ambiance/_AJG6677.jpg");
+    display: flex;
+    background-size: cover;
+}
+
+.navbar a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a.hover {
+    font-size: 25px;
+    color: blue;
+}
+
+.icone {
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.suite {
+    display: flex;
+    justify-content: center;
+    color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card {
+    border: 3px solid cyan;
+    width: 200px;
+    height: 170px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    border-top: solid 3px cyan;
+}
+
+.categories {
+    font-size: 10px;
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.name {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.price {
+    margin: 0 auto;
+    margin-top: 2px;
+    font-weight: 200;
+    color: red;
+}
+
+.photo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produits {
+    margin-left: 200px;
+    margin-right: 200px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: darkorchid;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+}
+
+.recher {
+    margin-left: 550px;
+    margin-top: 10px;
+}
