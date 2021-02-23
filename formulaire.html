@@ -78,18 +78,17 @@ if(isset($_SESSION['id_image'])){
                         <label for="ExNameInput1">Date fin de droit d'utilisation</label>
                         <input type="date" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="date_fin" value="">
                     </div>
-                    <form action="">
-                        <input type="checkbox" id="requirement" class="control">
-                        <label for="requirement">Check me</label>
-                        <fieldset class="conditional">
-                            <label for="option">Related subfield</label>
-                            <input type="text" id="option">
-                        </fieldset>
-                    </form>
+                    <div class="form-group">
+                        <label for="ExNameInput1">Droits d'utilisation limités</label>
+                        <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="copyrtights" value="">
+                    </div>
                     <div class="form-group">
                         <label for="ExNameInput1">Copyrights</label>
                         <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="copyrtights" value="">
                     </div>
+                    <button class="envoyer">
+                        <label for="ExNameInput1">Envoyer</label>
+                    </button>
 
                     </select>
                 </div>
