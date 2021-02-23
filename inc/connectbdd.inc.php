@@ -2,7 +2,7 @@
 
 // Pour se connecter à notre base de données
 
-$pdo = new PDO("mysql:host=localhost;dbname=projet48h", "root", "", array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+$pdo = new PDO("mysql:host=127.0.0.1;dbname=projet48h", "root", "", array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 ?>
 
 <!-- <?php
