@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <!-- NavBar -->
+    <div class="navbar">
+        <center>
+            <a href="..\Template home\index.html">Home</a>
+        </center>
+    </div>
+    <div class="main">
+
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-image">
+                    <img class="booking-img" src="images/form-img.jpg" alt="Booking Image">
+                </div>
+                <div class="booking-form">
+                    <form id="booking-form">
+                        <h2>Ajouter une image de votre repas préferé</h2>
+                        <!-- On introduit les differents tags-->
+                        <form class="ins3" method="POST">
+                            <div>
+                                <div class="box3">
+                                    <h2 class="text">Rentrer image</h2>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Nom Image</label>
+                                        <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="nom_image" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Type Image</label>
+                                        <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="type_image" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Photo avec Produit</label>
+                                        <select name="Choix">
+                                            <option value="Oui">Oui</option>
+                                            <option value="Non">Non</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Photo avec Humain</label>
+                                        <select name="Choix">
+                                            <option value="Oui">Oui</option>
+                                            <option value="Non">Non</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Photo Institutionnelle</label>
+                                        <select name="Choix">
+                                            <option value="Oui">Oui</option>
+                                            <option value="Non">Non</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Credit Photo</label>
+                                        <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="credit_photo" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Format</label>
+                                        <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="format" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Tags</label>
+                                        <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="tags" value="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Date fin de droit d'utilisation</label>
+                                        <input type="date" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="date_fin_droit" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Droits d'utilisation limités</label>
+                                        <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="droit_utilisation_limitee" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExNameInput1">Copyrights</label>
+                                        <input type="name" class="form-control" id="ExNameInput1" aria-describedby="nameHelp" name="copyrtights" value="">
+                                    </div>
+                                    <button class="envoyer" type="submit">
+                                    <label for="ExNameInput1">Envoyer</label>
+                                    </button>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- <?php
+require_once "connectbdd.inc.php";
+
+    if(isset($_POST['submit'])){
+        $nom_image = htmlspecialchars($_POST['nom_image']);
+        $type_image = htmlspecialchars($_POST['type_image']);
+        $photo_avec_produit = htmlspecialchars($_POST['photo_avec_produit']);
+        $photo_avec_humain = htmlspecialchars($_POST['photo_avec_humain']);
+        $photo_institutionelle = htmlspecialchars($_POST['photo_industrielle']);
+        $format = htmlspecialchars($_POST['format']);
+        $credit_photo = htmlspecialchars($_POST['credit_photo']);
+        $droit_utilisation_limitee = htmlspecialchars($_POST['droit_utilisation_limitee']);
+        $copyrights = htmlspecialchars($_POST['copyrights']);
+        $date_fin_droit = htmlspecialchars($_POST['date_fin_droit']);
+        $tags = htmlspecialchars($_POST['tags']);
+    
+
+//  $name = "";
+// if (!empty($_FILES)) {
+//     foreach ($_FILES["img"]["error"]as $key => $error){
+//     if ($error == UPLOAD_ERR_OK) {
+//         $tmp_name = $_FILES["img"]["tmp_name"][$key];
+//         $name = basename($_FILES["img"]["name"][$key]);
+//         move_uploaded_file($tmp_name, "img/$name");
+//     }
+// }
+// } 
+
+$requesteSQL = $pdo->prepare("INSERT INTO produit (nom_image, type_image, photo_avec_produit, photo_avec_humain, photo_industrielle, format, credit_photo, droit_utilisation_limitee, copyrights, date_fin_droit, tags) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$requesteSQL -> execute(array($type, $photo_avec_produit, $photo_avec_humain, $photo_institutionelle, $format, $credit_photo, $droit_utilisation_limitee, $copyrights, $date_fin_droit, $tags));
+echo 'Image ajouter';
+}
+?> -->
